@@ -1,0 +1,13 @@
+def get_matrix(n, m, value):
+    matrix = []
+    for i in range(n):
+        matrix.append([])
+        for j in range(m):
+            matrix[i].append(value)
+    print(matrix)
+    return matrix
+
+n = int(input(f'Строка матрицы: '))
+m = int(input(f'Столбци матрицы: '))
+value = int(input(f'Значения матрици: '))
+matrix = get_matrix(n, m, value)
