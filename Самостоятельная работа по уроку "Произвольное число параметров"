@@ -1,0 +1,9 @@
+def single_root_words(root_word, *other_words): # 1 пункт
+    same_words = [] # 2 пункт
+    for i in other_words: # 3 пункт
+        if root_word.lower().count(i.lower()) or i.lower().count(root_word.lower()): # 4 пункт
+            same_words.append(i)
+    return same_words # 5 пункт
+# 6 пункт
+print(single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies'))
+print(single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel'))
