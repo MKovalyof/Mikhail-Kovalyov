@@ -1,0 +1,29 @@
+#fake_math:
+def fake_divide(first, second):
+    if second == 0:
+        result = 'Ошибка'
+    else:
+        result = first / second
+    return result
+
+#true_math:
+from math import inf
+
+def true_divide(first, second):
+    if second == 0:
+        result = inf
+    else:
+        result = first / second
+    return result
+
+#module_4_1:
+from fake_math import fake_divide as fdiv
+from true_math import true_divide as tdiv
+result1 = fdiv(10, 1)
+result2 = fdiv(15, 0)
+result3 = tdiv(50, 5)
+result4 = tdiv(9, 0)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
